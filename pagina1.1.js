@@ -48,7 +48,7 @@ function anterior(){
     document.getElementById('titulo-slider').innerHTML=sliderTexto[i];
 
 }
-setInterval(proximo, 8000);
+//setInterval(proximo, 8000);
 
 
 

@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-cabecalho {
+    width: 100%;
+    height: 8vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FFFFFF;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 250px;
+}
+.checkbox {
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor:pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;   
+}
+.checkbox .trace {
+    width: 45px;
+    height: 1px;
+    border: 2px solid;
+    background-color: #c59565;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+.checkbox .trace:nth-child(1) {
+    top: 8px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(2) {
+    top: 25px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(3) {
+    top: 45px;
+    transform: rotate(0);
+}
+#toggle {
+    display: none;
+}
+.menu {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    height: 40px;
+    width: 10px;
+
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 0px #fff;
+    z-index: -1;
+    transition: 500ms ease-in-out 0s;
+}
+.menu-itens {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    
+    transition:200ms ease-in-out 0s;
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.menu-itens:hover {
+    color: #14110e;
+}
+.menu-itens ul li a {
+    margin: 50px 0;
+    color: #8D6742;
+    font-size: 40px;
+    letter-spacing: 4px;
+    line-height: 55px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 400ms ease-in-out 0s;
+}
+.menu-itens li a:hover {
+    color: #000;
+}
+
+/*MENU ANIMAÇÃO*/
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform:rotate(45deg);
+    top: 47px;
+}
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform:translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+    top: 47px;
+}
+#toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 45px;
+}
+#toggle:checked + .checkbox {
+    background-color: #c59565;
+}
+#toggle:checked ~ .menu {
+    box-shadow: 0px 0px 0px 52.5vmax #c59565;
+    z-index: 1;
+}
+#toggle:checked ~ .menu-itens {
+    visibility: visible;
+    opacity: 1;
+   
+}
+.header-titulo {
+  color: #8D6742;
+  font-size: 20px;
+}
+span {
+    font-weight: 100;
+}
+.menu-left ul {
+    display: flex;
+    list-style: none;
+}
+.menu-left a  {
+    list-style: none;
+    text-decoration: none;
+    margin-right: 10px;
+    color: #8D6742;
+}
+#titulo-slider  {
+    position: absolute;
+    color: #745639;
+    text-shadow: 0px 5px 10px rgb(125, 122, 122);
+    font-size: 50px;
+    top: 35vh;
+    left: 60%;
+    text-align: center;
+    line-height: 70px;
+    animation:fadeInDown ;
+    animation-duration: 3s;
+}
+#btn {
+    position: absolute;
+    left: 0;
+    top: 55%;
+    cursor: pointer;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#proximo, #anterior{
+    padding: 20px;
+    border-radius: 40%;
+    background-color: #c59565;
+
+}
+/*------------------------------------------------------------------------MAIN-PRIMARY--------------------------------------------------------*/
+
+#main-container-primary {
+    height: 100vh;
+    width: 99vw; 
+}
+#container-imagens {                          
+    width: 100%;
+    height: 100vh;
+    position: flex;
+    
+}
+#container-imagens img {                           
+    margin: 0 auto;
+    width: 100vw;
+    height: 110%;
+    display: flex;
+    overflow: hidden;                  
+    scroll-behavior: smooth;          
+}
+img {                                  
+    width: 100%;                       
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+
+}
+.titulo-banner p, h1{ 
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    font-size: 60px;
+    color: #000;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.main-banner-picture {
+    background-image: url(https://www.nuno-silva.pt/6_picture/169838-Moda-j%C3%B3ias-das-mulheres-colar-de-g%C3%B3tico-vintage-metal_image.jpeg);
+}
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+}
+.button input {
+    width: 120px;
+    height: 50px;
+    padding: 20px;
+    background-color: #000;
+    border: none;
+    box-shadow: 0px 5px 8px rgb(104, 101, 101);
+    color:#c59565;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 10px; 
+    margin-bottom: 25%;
+}
+/*-------------------------------------------------------------------------MAIN-SECONDARY--------------------------------------------------*/
+#main-container-secondary {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-model-photo {
+    background-image: url(https://i.pinimg.com/736x/3b/60/ed/3b60edfbd24249bf35e43aa36a441222.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: all 0.7s ease; 
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-btn{
+    width: 120px;
+    height: 50px;
+    border: none;
+    color:#c59565;
+    cursor: pointer;
+    background-color: #000;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 8px rgb(104, 101, 101);
+    font-size: 10px;
+    transition: 0.5s;
+    opacity: 0;
+    
+}
+.box:hover, .box-btn:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    
+}
+
+.cabecalho p {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 25px;
+    color: #c59565;
+    position: absolute;
+    left: 10px;
+    top: 111%;
+}
+.box {
+    width: 20%;
+    height: 80%;
+    box-shadow: 0px 10px 15px #999;
+    margin-top: 3%;
+    border: 1px solid #CCC;
+    cursor: pointer;
+}
+.box-model-photo {
+    height: 80%;
+    background-color: #8D6742;
+}
+.box-model-description {
+    height: 8%;
+}
+.box-model-description p {
+    margin: 10px 0 0 2px;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+}
+.box-model-radiosColor{
+    display: flex;
+}
+.box-model-radiosColor span {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background: rgb(153, 95, 95);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.box-model-radiosColor span:nth-child(2){
+    background: #FF69B4;
+}
+.box-model-radiosColor  span:nth-child(3){
+    background: black;
+}
+.box-model-radiosColor span:nth-child(4){
+    background: red;
+}
+.box-model-radiosColor span:nth-child(5){
+    background: rgb(192, 190, 190);
+}
+/*------------------------------------------------------------------------CATEGORIA------------------------------------------------------*/
+.conteudoCategoria{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15%;
+}
+.categoria1, .categoria2, .categoria3 {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+.categoria1:hover,
+.categoria2:hover,
+.categoria3:hover {
+    filter: grayscale(60%);
+    
+}
+.imagem{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    transition: opacity 2s ease, transform 2s ease;
+}
+.imagem:hover{
+    transform: scale(1.2);
+}
+/*EFEITO*/
+.titulo-categoria {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    font-size: 40px;
+    color: #fff;
+    z-index: 50;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.categoria3 .titulo-categoria{
+    left: 20%;
+}
+.categoria1:hover,
+.categoria2:hover,
+.categoria3:hover {
+    visibility: visible;
+    z-index: 10;
+}
+
+/*-------------------------------------------------------------------------FORMULARIO-----------------------------------------------*/
+#ranger-container-photo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://blog.connectplug.com.br/wp-content/uploads/2021/09/clothing-store-interior-visualization-3d-illustration-1024x640.jpg);
+    background-size: cover ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: blur(1.5);
+    margin-bottom: 10%;
+}
+.form-loja {
+    display: block;
+    width: 90%;
+    height: 70%;
+    margin: 10% auto;
+   
+}
+.form-loja input {
+    width: 80%;
+    margin: 20px 10%;
+    padding: 10px;
+    outline: none;
+    border-top-color: #fff;
+    border-left-color: transparent;
+    border-right-color:transparent ;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+}
+.form-loja label {
+    font-size: 18px;
+    margin-left: 10%;
+    color: #52402f;
+}
+#button {
+    width: 90%;
+    height: 50px;
+    border: none;
+    color:#c59565;
+    cursor: pointer;
+    background-color: #000;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 8px rgb(104, 101, 101);
+    font-size: 15px;
+    margin: 5% 6% 0 6%;
+        
+}
+.ranger-form{
+    width: 50%;
+    height: 80%;
+    display: block;
+    z-index: 100;
+    border-radius: 10px;
+    background-color: transparent;
+    background: rgba(255, 255, 255, 0.547);
+    backdrop-filter: blur(4px);
+    background-position: fixed;
+}
+.ranger-titulo h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 50px;
+
+}
+.ranger-titulo span {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+/*--------------------------------------------------------------RODAPE----------------------------------------------------------*/
+.rodape {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header-titulo {
+    color: #8D6742;
+    font-size: 20px;
+  }
+  span {
+      font-weight: 100;
+  }
+
+/*-----------------------------RESPONSIVIDADE NAV NOTEBOOK---------------------------------*/
+
+@media screen and (max-width:2000px) {
+    .ranger-form{
+        width: 50%;
+        height: 90%;
+    }
+    #button {
+        width: 80%;
+        height: 50px;
+        margin: 0% 8% 0 10%;
+    }
+
+
+}
+@media screen and (max-width:1500px) {
+    .checkbox-container {
+        margin-right: 200px;
+    }
+    .conteudoCategoria{
+        width: 100%;
+        height: 40vh;
+        flex-wrap: wrap;
+        margin-bottom: 10%;
+    }
+    .box{
+        width: 20%;
+        flex-wrap: wrap;
+    }
+
+}
+@media screen and (max-width:1000px) {
+    .conteudoCategoria{
+        width: 50vw;
+        height: 90%;
+        flex-wrap: wrap;
+        margin: 0 30% 10% 30%;
+        display: block;
+        align-items: center;
+        justify-content:center;
+    }
+    .categoria1, .categoria2, .categoria3 {
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        overflow: hidden;
+        cursor: pointer;
+
+    }
+}

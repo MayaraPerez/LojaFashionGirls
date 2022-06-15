@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-cabecalho {
+    width: 100%;
+    height: 8vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FFFFFF;
+    box-shadow: 3px 5px 15px rgba(17, 17, 17, 0.395);
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 250px;
+}
+.checkbox {
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor:pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;   
+}
+.checkbox .trace {
+    width: 45px;
+    height: 1px;
+    border: 2px solid;
+    background-color: #c59565;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+.checkbox .trace:nth-child(1) {
+    top: 8px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(2) {
+    top: 25px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(3) {
+    top: 45px;
+    transform: rotate(0);
+}
+#toggle {
+    display: none;
+}
+.menu {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    height: 40px;
+    width: 10px;
+
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 0px #fff;
+    z-index: -1;
+    transition: 500ms ease-in-out 0s;
+}
+.menu-itens {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    
+    transition:200ms ease-in-out 0s;
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.menu-itens:hover {
+    color: #14110e;
+}
+.menu-itens ul li a {
+    margin: 50px 0;
+    color: #8D6742;
+    font-size: 40px;
+    letter-spacing: 4px;
+    line-height: 55px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 400ms ease-in-out 0s;
+}
+.menu-itens li a:hover {
+    color: #000;
+}
+
+/*MENU ANIMAÇÃO*/
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform:rotate(45deg);
+    top: 47px;
+}
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform:translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+    top: 47px;
+}
+#toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 45px;
+}
+#toggle:checked + .checkbox {
+    background-color: #c59565;
+}
+#toggle:checked ~ .menu {
+    box-shadow: 0px 0px 0px 52.5vmax #c59565;
+    z-index: 1;
+}
+#toggle:checked ~ .menu-itens {
+    visibility: visible;
+    opacity: 1;
+   
+}
+.header-titulo {
+  color: #8D6742;
+  font-size: 20px;
+}
+span {
+    font-weight: 100;
+}
+.menu-left ul {
+    display: flex;
+    list-style: none;
+}
+.menu-left a  {
+    list-style: none;
+    text-decoration: none;
+    margin-right: 10px;
+    color: #8D6742;
+}
+/*--------------------------------------------------------------CONTAINER PRINCIPAL----------------------------------------------------*/
+.mini-banner img{
+    width: 100vw;
+    height: 55vh;
+    margin-top: 3%;
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-image: url("https://arcosmodels.com/wp-content/uploads/2017/01/Sem-T%C3%ADtulo-2-2.jpg");
+
+}
+.container{
+    width: 100vw;
+    height: 150vh;
+    border: 1px solid #aaaaaa;
+     margin-top: 2%;
+}
+.catalogo{
+   
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box1{
+    width: 25%;
+    height: 55%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transition: ease-in-out;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.box1:hover{
+    filter: grayscale(60%);
+}
+.imagem {
+    width: 90%;
+    height:90%;
+    border-radius: 5px;
+    background-image: url("https://valisere.vteximg.com.br/arquivos/ids/221924-400-530/2021-01-26-Agua_Doce-TAITI-15872-192_16241.jpg?v=637701869774800000");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

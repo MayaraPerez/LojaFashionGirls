@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="/js/MagicToolbox/MagicZoomPlusV2/magiczoomplus.css" />
+    <link rel="stylesheet" href="pagina1.4.css">
+    <title>Document</title>
+</head>
+<body>
+<!--------------------------------CONTAINER CABECALHO--------------------------->
+<header id="header-container">
+    <section class="header-cabecalho">
+        <div class="checkbox-container">
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="toggle">
+                <label class="checkbox" for="toggle">
+                    <div class="trace"></div>
+                    <div class="trace"></div>
+                    <div class="trace"></div>
+                </label>
+                <div class="menu"></div>
+                <nav class="menu-itens">
+                    <ul>
+                        <li>
+                            <a href="pagina1.1.html">HOMER</a>
+                        </li>
+                        <li>
+                            <a href="#categorias">Categorias</a>
+                        </li>
+                        <li>
+                            <a href="pagina1.3.html">Sandálias</a>
+                        </li>
+                        <li>
+                            <a href="#">Destaques</a>
+                        </li>
+                        <li>
+                            <a href="pagina1.5.html">Acessorios</a>
+                        </li>
+                        <li>
+                            <a href="pagina1.6.html">Moda Praia</a>
+                        </li>
+                        <li>
+                            <a href="#cadastro">Cadatro</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    
+        <div class="header-titulo">
+            <h2>Angel's <span>Fashion</span></h2>
+        </div>
+        <div class="menu-left">
+            <ul>
+                <li><a href="">Cadastro</a></li>
+                <li><a href="">Sacolinha</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="">Entrar</a></li>
+            </ul>
+        </div>
+        </section>
+</header>
+
+<section id="principal">
+    <div class="titulo-page">
+        <h2>carrinho de compras</h2>
+    </div>
+    <div class="principal-description">
+        <div class="img">
+            
+        </div>
+        <div class="btn-qtd">
+            <label for="">
+                <input type="button" id="plus" value='-' onclick="process(-1)" />
+                <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                <input type="button" id="minus" value='+' onclick="process(1)">
+            </label>
+        </div>
+        <div class="preco">
+            <p class="titulo-preco">Preço</p>
+            <span>R$ 197,00</span>
+        </div>
+        <div class="emoji">
+            <i class="fa fa-trash"></i>
+        </div>
+    </div>
+</section>
+<div class="aviso">
+    <p>DESCULPE, MAS NÃO HÁ ESTOQUE SUFICIENTE PARA INCLUIR ESTE PRODUTO AO CARRINHO.</p>
+</div>
+<section id="secondary">
+    <div class="secondary-description">
+        <div class="description-frete">
+            <p class="description1"><span>frete gratis</span> a partir de R$250,00</p>
+            <p class="description2">Consulte seu CEP</p>
+            <input type="text" value="">
+            <input type="btn" value="Verificar">
+      
+            <div class="box1">
+                <input type="checkbox" name="" id="check">
+                <p>Correios</p>
+            </div>
+            <div class="box2">
+                <input type="checkbox" name="" id="check">
+                <p>Correios-SEDEX</p>
+            </div>
+            <div class="box3">
+                <input type="checkbox" name="" id="check">
+                <p>frete-FIXO</p>
+            </div>
+        </div>
+
+        <div class="description-preco">
+            <p class="description3">Subtotal(frete): R$197,00</p>
+            <h2 class="description4">total: R$ 197,00</h2>
+            <select id="">
+                <option value="">Formas de parcelamento:</option>
+                <option value="">1x  R$197,00(sem juros)</option>
+                <option value="">2x  R$102,00</option>
+                <option value="">3x  R$69,00</option>
+                <option value="">4x  R$52,00</option>
+                <option value="">5x  R$43,00</option>
+            </select>
+            <div class="emoji-card">
+                <img src="./Imagens/amex.png" alt="AMEX">
+                <img src="./Imagens/diners.png" alt="DINES">
+                <img src="./Imagens/elo.png" alt="ELO">
+                <img src="./Imagens/hipercard.png" alt="HIPCARD">
+                <img src="./Imagens/mastercard.png" alt="MASTERCARD">
+                <img src="./Imagens/visa.png" alt="VISA">
+                
+            </div>
+            <div class="btn">
+                <input type="btn" value="Finalizar">
+            </div>
+        </div>
+    </div>
+
+</section>
+<script src="pagina1.4.script"></script>
+
+</body>

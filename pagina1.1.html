@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina1.1.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+<!--------------------------------CONTAINER CABECALHO----------------------------------->
+    <header id="header-container">
+        <section class="header-cabecalho">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu"></div>
+                    <nav class="menu-itens">
+                        <ul>
+                            <li>
+                                <a href="pagina1.1.html">HOMER</a>
+                            </li>
+                            <li>
+                                <a href="#categoria">Categorias</a>
+                            </li>
+                            <li>
+                                <a href="pagina1.3.html">Sandálias</a>
+                            </li>
+                            <li>
+                                <a href="#">Destaques</a>
+                            </li>
+                            <li>
+                                <a href="pagina1.5.html">Acessorios</a>
+                            </li>
+                            <li>
+                                <a href="pagina1.6.html">Moda Praia</a>
+                            </li>
+                            <li>
+                                <a href="#cadastro.html">Cadastro</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+       
+            <div class="header-titulo">
+                <h2>Angel's <span>Fashion</span></h2>
+            </div>
+            <div class="menu-left">
+                <ul>
+                    <li><a href="">Cadastro</a></li>
+                    <li><a href="">Sacolinha</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="">Entrar</a></li>
+                </ul>
+            </div>
+         </section>
+    </header>
+    <!--------------------------------CONTAINER MAIN PRIMARIO--------------------------->
+    <main id="main-container-primary">
+        <section class="banner">
+
+            <div id="container-imagens">
+                <img src="./imagens/pexels-gustavo-fring-4127641.jpg" id="imagenGrande">
+            </div>
+            <p id="titulo-slider">COLEÇÃO <br> PRIMAVERA VERÃO </p>
+    
+            <div id="btn">
+                <button id="proximo" onclick="proximo()"></button>
+                <button id="anterior" onclick="anterior()"></button>
+            </div> 
+          
+               
+        </section>
+    </main>
+    <!--------------------------------CONTAINER MAIN SECONDARY--------------------------->
+     <main id="main-container-secondary">
+        <section class="box"  data-aos="fade-up">         
+           <div class="box-model-photo">
+              <a href="pagina1.2.html"> <input class="box-btn" type="submit" value="Comprar Agora"></a> 
+           </div>
+            <div class="box-model-description">
+                <p>Vestido Cigana</p>
+            </div>
+            <div class="box-model-radiosColor">
+                <h3>Cor:</h3>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
+        <section class="box"  data-aos="fade-up">         
+            <div class="box-model-photo">
+               <a href="pagina1.2.html"> <input class="box-btn" type="submit" value="Comprar Agora"></a> 
+            </div>
+             <div class="box-model-description">
+                 <p>Vestido Cigana</p>
+             </div>
+             <div class="box-model-radiosColor">
+                 <h3>Cor:</h3>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </div>
+         </section>
+
+        <section class="box"  data-aos="fade-up">         
+            <div class="box-model-photo">
+               <a href="pagina1.2.html"> <input class="box-btn" type="submit" value="Comprar Agora"></a> 
+            </div>
+             <div class="box-model-description">
+                 <p>Vestido Cigana</p>
+             </div>
+             <div class="box-model-radiosColor">
+                 <h3>Cor:</h3>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </div>
+        </section>
+
+        <section class="box"  data-aos="fade-up">         
+            <div class="box-model-photo">
+               <a href="pagina1.2.html"><input class="box-btn" type="submit" value="Comprar Agora"></a> 
+            </div>
+             <div class="box-model-description">
+                 <p>Vestido Cigana</p>
+             </div>
+             <div class="box-model-radiosColor">
+                 <h3>Cor:</h3>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </div>
+        </section>
+    </main>
+    <a name="categoria">
+        <div class="button" data-aos="fade-up">
+        <a href=""><input type="submit" value="Ver mais" id="verMais"></a>
+        </div>
+    </a>
+<!---------------------------------CONTAINER-CATEGORIAS------------------------------------>
+   <section class="conteudoCategoria">
+        <a href="pagina1.6.html" target="_self" > 
+            <div  class="categoria1" data-aos="fade-left">
+                <h3 class="titulo-categoria">PRAIA</h3>
+                <img src="https://rgproprio.files.wordpress.com/2018/01/moda-praia-verao-2018-maio-14.jpg" class="imagem" alt="">
+            </div>
+        </a>    
+
+        <a href="pagina1.5.html" target="_self" > 
+            <div class="categoria2">
+                <h3 class="titulo-categoria"></h3>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_768948-MLB44750567182_012021-O.jpg" class="imagem" alt="">
+            </div>
+        </a> 
+
+        <a href="pagina1.3.html" target="_self" > 
+            <div class="categoria3" data-aos="fade-right">
+                <h3 class="titulo-categoria">SANDALIAS</h3>
+                <img src="https://i.pinimg.com/550x/6f/e3/77/6fe377479f010144622c3680c4a8a0af.jpg" class="imagem" alt="">
+            </div>
+        </a>
+    </section>
+<!---------------------------------RANGER-FORMULARIO------------------------------------>
+    <a name="cadastro"></a><section id="ranger-container-photo"> </a> 
+       <div class="ranger-form">
+           <form class="form-loja">
+               <label for="nome"> Nome Completo:
+                   <input type="text" name="nome" id="nome" onblur="verificarNome() ">
+                   <p id="aviso"></p>
+               </label>
+
+               <label for="dateNasc">Data Nascimento:
+                    <input type="text" name="data" id="dateNasc" onblur="verificarData()">
+                    <p id="aviso1"></p>
+                </label>
+
+               <label for="email">E-mail:
+                    <input type="email" name="email" id="email" onblur="verificarEmail()">
+                    <p id="aviso2"></p>
+                </label>
+
+                <label for="telefone">Telefone:
+                    <input type="tel" name="telefone" id="telefone" onblur="verificarTelefone()">
+                    <p id="aviso3"></p>
+                </label>
+
+                <label for="iEndereço">Endereço:
+                    <input type="endereço" name="endereço" id="iEndereço" onblur="verificarEndereco()">
+                    <p id="aviso4"></p>
+                </label>
+
+                 <input type="submit" value="Cadastrar" id="button" onclick="funcaoAlerta()">
+           </form>
+           
+        </div>
+    </section>
+<!--------------------------------CONTAINER FOOTER--------------------------->
+    <footer>
+        <div class="rodape">
+            <div class="header-titulo">
+                <h2>Angel's <span>Fashion</span></h2>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+   <script src="pagina1.1.js"></script>
+</body>
+</html>

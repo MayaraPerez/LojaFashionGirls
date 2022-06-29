@@ -48,7 +48,7 @@ function anterior(){
     document.getElementById('titulo-slider').innerHTML=sliderTexto[i];
 
 }
-//setInterval(proximo, 8000);
+setInterval(proximo, 8000);
 
 
 
@@ -105,22 +105,30 @@ function verificarNome() {
 }    
 //--------------------------------------------------DATA NASCIMENTO
 function verificarData(){
-    let dateNascimento = document.getElementById("dataNasc").value;
+    let dateNascimento = document.getElementById("dateNasc").value;
 
-    document.getElementById("dataNasc").value = dateNascimento;
+    document.getElementById("dateNasc").value = dateNascimento;
 
-    if(document.getElementById("dataNasc").value.length == " "){
+    if(dateNascimento.length <8 || dateNascimento.length >8){
+        document.getElementById("dateNasc").value.length == " "
         document.getElementById('aviso1').innerHTML= '';
-        document.getElementById('dataNasc').style.borderColor = "red";
+        document.getElementById('dateNasc').style.borderColor = "red";
         document.getElementById('aviso1').style.color = "red";
+    }
 
-    } else if(dateNascimento.length <= 8) { //05/08/1992
+     if(dateNascimento.length == 8) { // 05/08/1992
+        //let formataDateNascimento = dateNasc.substring(0,2)+ " / " +dateNasc.substring(2,5)+ " / " + dateNasc.substring(5,10);
+
+        //document.getElementById('dateNasc').value = formataDateNascimento;
         document.getElementById('aviso1').innerHTML= '';
-        document.getElementById('dataNasc').style.borderColor = "green";
+        document.getElementById('dateNasc').style.borderColor = "green";
         document.getElementById('aviso1').style.color = "green";
     }
     
-}
+    
+  }
+
+
 //-----------------------------------------------------EMAIL
 
 function verificarEmail () {
@@ -147,15 +155,14 @@ function verificarEmail () {
 //--------------------------------------------------TELEFONE
 
 function verificarTelefone(){
-    let telefone = document.getElementById("telefone").value;
+    let itelefone = document.getElementById("telefone").value;
 
-    document.getElementById("telefone").value = telefone;
+    document.getElementById("telefone").value = itelefone;
 
-    if(telefone.length == 9) { // 98220-8992
-        let formataTelefone = telefone.includes(0,6)+ " - " +telefone.includes(8,9);
+    if(itelefone.length == 9) { // 98220-8992
+        let formataitelefone = itelefone.substring(0,5)+ " - " +itelefone.substring(5,10);
        
-        document.getElementById('telefone').value = formataTelefone;
-        document.getElementById('aviso3').innerHTML= telefone;
+        document.getElementById('telefone').value = formataitelefone;
         document.getElementById('telefone').style.borderColor = 'green';
         document.getElementById('aviso3').style.color = 'green';
 

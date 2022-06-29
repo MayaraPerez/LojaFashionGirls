@@ -1,4 +1,4 @@
-# MinhaLoja-ficticia
+# MinhaLoja-fictícia
 Site Consiste em uma Loja fictícia - Fashion Girl's
 
 <h2>Fashion <span>Girl's</span></h2>

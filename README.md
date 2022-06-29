@@ -9,13 +9,13 @@ Descrição do Projeto:
 Site de uma loja Fictícia em fase de implementação constantemente atualizo ou melhoro algo.
 <br> Nela encontramos HTML, CSS, JS.
 
-Proposito do projeto:
+Proposito do projeto:<br>
 Sempre tento aprimorar os fundamentos estudados em HTML, CSS e principalmente JS na qual venho me expondo com mais frequência
 procuro realizar projetos como esse, de um <strong> Site de uma loja fictícia </strong>, para refinar meu conhecimento, com longas pesquisas por sites nesse estilo recolho, informações, junto-as, refino e faço algo com as minhas características gosto de procurar por novas 
 ferramento que possam valorizar o meu trabalho. Até o momento esse foi o site que quis fazer mais completo.
 
 Possui Seis páginas com Link Local e link interno para navegar por entre as páginas do site.
-Possui link Local e Externo.
+Possui link Local e Externo.<br>
 Página Homer
 Página Sandálias
 Pagina de acessórios

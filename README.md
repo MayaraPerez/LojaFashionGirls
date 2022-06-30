@@ -39,5 +39,8 @@ Nesse Projeto Será Abordado:
 - Posicionamento e flutuações
 - Cor: hexadecimal, rgb e nomeado
 - Fluxo de trabalho Git e Git
+- Conhecimentos em JavaScript
+- Validação dos campos do formulário
+- carrocel de imagens 
 
 

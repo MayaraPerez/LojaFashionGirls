@@ -7,7 +7,10 @@ Site Consiste em uma Loja fictícia - Fashion Girl's
 
 Descrição do Projeto: 
 Site de uma loja Fictícia em fase de implementação constantemente atualizo ou melhoro algo.
-<br> Nela encontramos HTML, CSS, JS.
+<br> 🛠 As seguintes ferramentas foram usadas na construção do projeto:
+- HTML
+- CSS
+- JS.
 
 Proposito do projeto:<br>
 Sempre tento aprimorar os fundamentos estudados em HTML, CSS e principalmente JS na qual venho me expondo com mais frequência
@@ -42,5 +45,11 @@ Nesse Projeto Será Abordado:
 - Conhecimentos em JavaScript
 - Validação dos campos do formulário
 - carrocel de imagens 
+
+
+### Pré-requisitos
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [VSCode](https://code.visualstudio.com/). 
+
 
 
